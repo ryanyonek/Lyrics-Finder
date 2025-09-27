@@ -1,0 +1,74 @@
+@media (max-width: 575.98px) { 
+    .lyrics {
+        column-count: 1;
+        column-gap: 40px;
+        width: 100%;
+        overflow-wrap: break-word;
+        font-size: 0.75rem;
+        padding: 0px;
+        margin-top: 10px;
+    }
+    h1 {
+        font-size: 1.25rem;
+        padding: 0px;
+    }
+    .form-item {
+        font-size: 0.75rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    .error {
+        padding-top: 10px;
+    }
+    .form-control {
+        margin: 0rem 0rem 0rem 2rem;
+        width: 70%;
+    }
+}
+
+@media (min-width: 1199.98px) { 
+    .lyrics {
+        column-count: 3;
+        column-gap: 40px;
+        width: 100%;
+        margin-top: 30px;
+        overflow-wrap: break-word;
+    }
+    h1 {
+        font-size: 2.25rem;
+        padding: 0px;
+    }
+    .form-item {
+        font-size: 1.25rem;
+    }
+    h2 {
+        font-size: 2.25rem;
+    }
+    .error {
+        padding-top: 30px;
+    }
+}
+
+.column1 {
+    background-color: #E8DFCA;
+}
+
+.column2 {
+    background-color: #FFF0DD;
+}
+
+body {
+    background-color: #19183B;
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+
+.container-sm {
+    margin-top: 100px;
+}
+
+.container {
+    margin-bottom: 10%;
+}
