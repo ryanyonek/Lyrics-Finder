@@ -53,8 +53,8 @@ app.post("/submit", async (req, res) => {
         console.log(req.body);
         const artist = req.body.artist.replaceAll(" ", "_");
         const title = req.body.title.replaceAll(" ", "_");
-        const response = await axios.get(`https://private-anon-3b0882da7a-lyricsovh.apiary-proxy.com/v1/${artist}/${title}`);
-        console.log(`Before: ${JSON.stringify(response.data.lyrics)}`);
+        const response = await axios.get(`https://private-anon-e17e78d90b-lyricsovh.apiary-proxy.com/v1/${artist}/${title}`);
+        //console.log(`Before: ${JSON.stringify(response.data.lyrics)}`);
         var lyrics = JSON.stringify(response.data.lyrics);
         const lyrics2 = lyrics.replaceAll("\"", "");
         const capitalizedLyrics = lyrics2.charAt(0).toUpperCase() + lyrics2.slice(1);
@@ -66,7 +66,7 @@ app.post("/submit", async (req, res) => {
         const spacedCapitalizedLyrics3 = spacedCapitalizedLyrics2.replaceAll("\\r", "<br>");
         const spacedCapitalizedLyrics4 = spacedCapitalizedLyrics3.replaceAll("\\", "\"");
         const lyricsFixed = spacedCapitalizedLyrics4;
-        console.log(`After: ${lyricsFixed}`);
+        //console.log(`After: ${lyricsFixed}`);
         res.render("index.ejs", {
             artist: artist.replaceAll("_", " "),
             title: title.replaceAll("_", " "),
