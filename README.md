@@ -16,3 +16,6 @@ In the shell:
 - npm i
 - node index.js
 
+## Screenshot of Project
+[screenshot of project](./public/images/screenshot-lyrics-finder.png)
+
